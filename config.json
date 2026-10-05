@@ -13,12 +13,12 @@
     "sub_clash_uri": "/clash/"
   },
   "inbounds": {
-    "manual_min_port": 8080,
+    "manual_min_port": 8081,
     "manual_max_port": 8090,
     "_comment": "Reserved internal Xray inbound range. Users may create any supported inbound in this range; scripts do not create or delete them. Railway TCP Proxy may expose these on different public ports."
   },
   "server": {
-    "public_port": 3000,
+    "public_port": 8080,
     "health_path": "/health"
   }
 }
