@@ -1,0 +1,24 @@
+{
+  "_comment": "Simple Railway + 3x-ui/Senai configuration. Tor and automatic country inbounds are intentionally removed. Users create their own inbounds in the panel.",
+  "xui": {
+    "internal_port": 2053,
+    "web_base_path": "/managepanel",
+    "default_username": "admin",
+    "default_password": "admin",
+    "public_domain": "",
+    "subscription_port": 2096,
+    "subscription_listen": "127.0.0.1",
+    "sub_uri": "/sub/",
+    "sub_json_uri": "/json/",
+    "sub_clash_uri": "/clash/"
+  },
+  "inbounds": {
+    "manual_min_port": 8080,
+    "manual_max_port": 8090,
+    "_comment": "Reserved internal Xray inbound range. Users may create any supported inbound in this range; scripts do not create or delete them. Railway TCP Proxy may expose these on different public ports."
+  },
+  "server": {
+    "public_port": 3000,
+    "health_path": "/health"
+  }
+}
